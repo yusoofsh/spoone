@@ -1,13 +1,59 @@
-import type { MetaFunction } from "@remix-run/node"
+import type { MetaFunction, LinksFunction } from "@remix-run/node"
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react"
 
-export const meta: MetaFunction = () => ({
-	charset: "utf-8",
-	title: "New Remix App",
-	viewport: "width=device-width,initial-scale=1",
-})
+import { APP_NAME, APP_URL, APP_COLOR } from "~/components/SEO"
 
-export default function App() {
+const meta: MetaFunction = () => {
+	return {
+		charset: "utf-8",
+		referrer: "origin",
+		robots: "all",
+		viewport: "width=device-width,initial-scale=1",
+		"application-name": APP_NAME,
+		"msapplication-config": "/favicon/browserconfig.xml",
+		"msapplication-TileColor": APP_COLOR,
+		"theme-color": APP_COLOR,
+	}
+}
+
+const links: LinksFunction = () => {
+	return [
+		{
+			rel: "canonical",
+			href: APP_URL,
+		},
+		{
+			rel: "apple-touch-icon",
+			sizes: "180x180",
+			href: "/favicon/apple-touch-icon.png",
+		},
+		{
+			rel: "icon",
+			sizes: "16x16",
+			href: "/favicon/favicon-16x16.png",
+		},
+		{
+			rel: "icon",
+			sizes: "32x32",
+			href: "/favicon/favicon-32x32.png",
+		},
+		{
+			rel: "manifest",
+			href: "/favicon/site.webmanifest",
+		},
+		{
+			rel: "mask-icon",
+			href: "/favicon/safari-pinned-tab.svg",
+			color: APP_COLOR,
+		},
+		{
+			rel: "shortcut icon",
+			href: "/favicon/favicon.ico",
+		},
+	]
+}
+
+const Root = () => {
 	return (
 		<html lang="en">
 			<head>
@@ -17,9 +63,12 @@ export default function App() {
 			<body>
 				<Outlet />
 				<ScrollRestoration />
-				<Scripts />
 				<LiveReload />
+				<Scripts />
 			</body>
 		</html>
 	)
 }
+
+export { meta, links }
+export default Root
