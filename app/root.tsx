@@ -1,6 +1,8 @@
 import type { MetaFunction, LinksFunction } from "@remix-run/node"
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react"
 
+import globalStylesheet from "~/styles/global.css"
+import tailwindStylesheet from "~/styles/tailwind.css"
 import { APP_NAME, APP_URL, APP_COLOR } from "~/components/SEO"
 
 const meta: MetaFunction = () => {
@@ -49,6 +51,14 @@ const links: LinksFunction = () => {
 		{
 			rel: "shortcut icon",
 			href: "/favicon/favicon.ico",
+		},
+		{
+			rel: "stylesheet",
+			href: globalStylesheet,
+		},
+		{
+			rel: "stylesheet",
+			href: tailwindStylesheet,
 		},
 	]
 }
