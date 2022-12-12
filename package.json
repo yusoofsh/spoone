@@ -1,4 +1,5 @@
 {
+  "name": "spoone",
   "private": true,
   "sideEffects": false,
   "scripts": {
