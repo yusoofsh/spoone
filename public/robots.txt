@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://yusoofsh.id
+
+# Sitemaps
+Sitemap: https://yusoofsh.id/sitemap.xml

@@ -1,0 +1,26 @@
+@font-face {
+	font-family: "Gilroy";
+	src: url(/fonts/Gilroy-Medium.woff2) format("woff2"), url(/fonts/Gilroy-Medium.woff) format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url(/fonts/Gilroy-Regular.woff2) format("woff2"), url(/fonts/Gilroy-Regular.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: fallback;
+}
+
+body {
+	font-family: "Gilroy", "Helvetica", sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.7;
+	color: var(--body-color);
+	background-color: var(--bg-contrast);
+	background-image: radial-gradient(150% 150% at 0% 20%, var(--bg-contrast) 20%, var(--bg-color));
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
