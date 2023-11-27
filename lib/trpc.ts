@@ -10,9 +10,9 @@ import {
   createTRPCProxyClient,
   loggerLink,
 } from "@trpc/client";
-import { appRouter } from "~/server/api/root";
-import { createTRPCContext } from "~/server/api/trpc";
-import { transformer } from "./shared";
+import { appRouter } from "@/lib/server/api/root";
+import { createTRPCContext } from "@/lib/server/api/trpc";
+import { transformer } from "@/lib/utils";
 
 /**
  * This wraps the `createTRPCContext` helper and provides the required context for the tRPC API when

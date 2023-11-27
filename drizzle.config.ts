@@ -1,9 +1,9 @@
 import { type Config } from "drizzle-kit";
-import { env } from "~/env";
+import { env } from "@/lib/env";
 
 export default {
-  schema: "./src/server/db/schema.ts",
-  out: "./src/server/db/migrations",
+  schema: "lib/server/db/schema.ts",
+  out: "lib/server/db/migrations",
   driver: "pg",
   dbCredentials: { connectionString: env.POSTGRES_URL },
 } satisfies Config;

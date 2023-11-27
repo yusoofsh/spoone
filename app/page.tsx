@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { CreatePost } from "~/app/_components/create-post";
-import { api } from "~/trpc/server";
+import { CreatePost } from "@/app/_components/create-post";
+import { api } from "@/lib/trpc";
 
 export default async function Home() {
   const hello = await api.post.hello.query({ text: "from tRPC" });
