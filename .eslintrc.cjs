@@ -69,8 +69,8 @@ module.exports = {
           "sibling",
           "index",
         ],
-        "newlines-between": "always",
-        alphabetize: { order: "asc" },
+        "distinctGroup": false,
+        "newlines-between": "never",
       },
     ],
 
