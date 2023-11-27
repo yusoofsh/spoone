@@ -1,4 +1,4 @@
-/** @type {import('@types/lint-staged').Config} */
+/** @type {import('lint-staged').Config} */
 module.exports = {
   // Sort package.json keys
   "package.json": "sort-package-json",
