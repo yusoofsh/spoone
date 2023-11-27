@@ -1783,6 +1783,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vercel/analytics@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@vercel/analytics@npm:1.1.1"
+  dependencies:
+    server-only: "npm:^0.0.1"
+  checksum: 218f94620b6dd0349960caf170c7c86872d67b0ef90ac127cd6e6a8f018c9118fbf21a3adf9314ca93d72c1599b8b77ac0e4cb8390ac33aa5fec555d749b3308
+  languageName: node
+  linkType: hard
+
 "@vercel/postgres@npm:^0.5.1":
   version: 0.5.1
   resolution: "@vercel/postgres@npm:0.5.1"
@@ -7378,6 +7387,7 @@ __metadata:
     "@types/react-dom": "npm:^18.2.15"
     "@typescript-eslint/eslint-plugin": "npm:^6.11.0"
     "@typescript-eslint/parser": "npm:^6.11.0"
+    "@vercel/analytics": "npm:^1.1.1"
     "@vercel/postgres": "npm:^0.5.1"
     "@vercel/style-guide": "npm:^5.1.0"
     autoprefixer: "npm:^10.4.14"

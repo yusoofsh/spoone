@@ -1,5 +1,6 @@
 import "@/ui/styles/globals.css";
 
+import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 import { cookies } from "next/headers";
 import { TRPCReactProvider } from "@/ui/trpc";
@@ -22,6 +23,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <TRPCReactProvider cookies={cookies().toString()}>
           {children}
         </TRPCReactProvider>
+        <Analytics />
       </body>
     </html>
   );
