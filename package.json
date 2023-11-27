@@ -55,9 +55,6 @@
     "typescript": "^5.3.2"
   },
   "packageManager": "yarn@4.0.2",
-  "engines": {
-    "node": ">=18.17.0"
-  },
   "ct3aMetadata": {
     "initVersion": "7.24.0"
   }
