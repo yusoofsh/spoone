@@ -31,8 +31,8 @@
   },
   "include": [
     ".next/types/**/*.ts",
-    ".eslintrc.cjs",
-    ".prettierrc.cjs",
+    "**/.*.cjs",
+    "**/*.cjs",
     "**/*.js",
     "**/*.ts",
     "**/*.tsx",
