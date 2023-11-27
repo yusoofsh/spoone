@@ -39,7 +39,6 @@ const RAW_RUNTIME_STATE =
           ["@types/eslint", "npm:8.44.7"],\
           ["@types/lint-staged", "npm:13.2.2"],\
           ["@types/node", "npm:18.18.13"],\
-          ["@types/pg", "npm:8.10.9"],\
           ["@types/react", "npm:18.2.38"],\
           ["@types/react-dom", "npm:18.2.17"],\
           ["@typescript-eslint/eslint-plugin", "virtual:7d303c49e6538fbf8817598dabe4c5036507ebf86bdad45bee6aabc3862d00274bd6b84f237f6f2ac20e74528135e2510f755e75f12faf7026b5495d91c45565#npm:6.12.0"],\
@@ -56,7 +55,6 @@ const RAW_RUNTIME_STATE =
           ["husky", "npm:8.0.3"],\
           ["lint-staged", "npm:15.1.0"],\
           ["next", "virtual:7d303c49e6538fbf8817598dabe4c5036507ebf86bdad45bee6aabc3862d00274bd6b84f237f6f2ac20e74528135e2510f755e75f12faf7026b5495d91c45565#npm:14.0.3"],\
-          ["pg", "virtual:7d303c49e6538fbf8817598dabe4c5036507ebf86bdad45bee6aabc3862d00274bd6b84f237f6f2ac20e74528135e2510f755e75f12faf7026b5495d91c45565#npm:8.11.3"],\
           ["postcss", "npm:8.4.31"],\
           ["postcss-load-config", "virtual:a3fffa234cfde0647eca0c809a1b814dd7d5ff3a7d6caba1cfa80dec5048f7ee0445c69f0d8857c49b1d82131b8323778d8b3b0c4758a59042516948a8168858#npm:4.0.2"],\
           ["prettier", "npm:3.1.0"],\
@@ -1985,16 +1983,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/pg", [\
-      ["npm:8.10.9", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/@types-pg-npm-8.10.9-ee8620c8e7-10c0.zip/node_modules/@types/pg/",\
-        "packageDependencies": [\
-          ["@types/pg", "npm:8.10.9"],\
-          ["@types/node", "npm:20.10.0"],\
-          ["pg-protocol", "npm:1.6.0"],\
-          ["pg-types", "npm:4.0.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:8.6.6", {\
         "packageLocation": "../../../../../../.yarn/berry/cache/@types-pg-npm-8.6.6-a6578d0c17-10c0.zip/node_modules/@types/pg/",\
         "packageDependencies": [\
@@ -2929,15 +2917,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["buffer-writer", [\
-      ["npm:2.0.0", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/buffer-writer-npm-2.0.0-5cd2ef55bc-10c0.zip/node_modules/buffer-writer/",\
-        "packageDependencies": [\
-          ["buffer-writer", "npm:2.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["bufferutil", [\
       ["npm:4.0.8", {\
         "packageLocation": "./.yarn/unplugged/bufferutil-npm-4.0.8-8005ed6210/node_modules/bufferutil/",\
@@ -3800,7 +3779,7 @@ const RAW_RUNTIME_STATE =
           ["@types/mysql2", null],\
           ["@types/neondatabase__serverless", null],\
           ["@types/opentelemetry__api", null],\
-          ["@types/pg", "npm:8.10.9"],\
+          ["@types/pg", null],\
           ["@types/planetscale__database", null],\
           ["@types/postgres", null],\
           ["@types/sql.js", null],\
@@ -3812,7 +3791,7 @@ const RAW_RUNTIME_STATE =
           ["knex", null],\
           ["kysely", null],\
           ["mysql2", null],\
-          ["pg", "virtual:7d303c49e6538fbf8817598dabe4c5036507ebf86bdad45bee6aabc3862d00274bd6b84f237f6f2ac20e74528135e2510f755e75f12faf7026b5495d91c45565#npm:8.11.3"],\
+          ["pg", null],\
           ["postgres", null],\
           ["sql.js", null],\
           ["sqlite3", null]\
@@ -7310,15 +7289,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["obuf", [\
-      ["npm:1.1.2", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/obuf-npm-1.1.2-8db5fae8dd-10c0.zip/node_modules/obuf/",\
-        "packageDependencies": [\
-          ["obuf", "npm:1.1.2"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["once", [\
       ["npm:1.4.0", {\
         "packageLocation": "../../../../../../.yarn/berry/cache/once-npm-1.4.0-ccf03ef07a-10c0.zip/node_modules/once/",\
@@ -7430,15 +7400,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["packet-reader", [\
-      ["npm:1.0.0", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/packet-reader-npm-1.0.0-e93c92246b-10c0.zip/node_modules/packet-reader/",\
-        "packageDependencies": [\
-          ["packet-reader", "npm:1.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["parent-module", [\
       ["npm:1.0.1", {\
         "packageLocation": "../../../../../../.yarn/berry/cache/parent-module-npm-1.0.1-1fae11b095-10c0.zip/node_modules/parent-module/",\
@@ -7534,90 +7495,11 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["pg", [\
-      ["npm:8.11.3", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/pg-npm-8.11.3-94865204fd-10c0.zip/node_modules/pg/",\
-        "packageDependencies": [\
-          ["pg", "npm:8.11.3"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:7d303c49e6538fbf8817598dabe4c5036507ebf86bdad45bee6aabc3862d00274bd6b84f237f6f2ac20e74528135e2510f755e75f12faf7026b5495d91c45565#npm:8.11.3", {\
-        "packageLocation": "./.yarn/__virtual__/pg-virtual-a7eae9ea86/7/.yarn/berry/cache/pg-npm-8.11.3-94865204fd-10c0.zip/node_modules/pg/",\
-        "packageDependencies": [\
-          ["pg", "virtual:7d303c49e6538fbf8817598dabe4c5036507ebf86bdad45bee6aabc3862d00274bd6b84f237f6f2ac20e74528135e2510f755e75f12faf7026b5495d91c45565#npm:8.11.3"],\
-          ["@types/pg-native", null],\
-          ["buffer-writer", "npm:2.0.0"],\
-          ["packet-reader", "npm:1.0.0"],\
-          ["pg-cloudflare", "npm:1.1.1"],\
-          ["pg-connection-string", "npm:2.6.2"],\
-          ["pg-native", null],\
-          ["pg-pool", "virtual:a7eae9ea8675c5d10f6c7b435ac10ab2d74ae37633aff71493d365dc7f7315643da269ff8d72ac5a9930df6f5c0a9fec3f624b729d0d6398fc3ebd2b6336da33#npm:3.6.1"],\
-          ["pg-protocol", "npm:1.6.0"],\
-          ["pg-types", "npm:2.2.0"],\
-          ["pgpass", "npm:1.0.5"]\
-        ],\
-        "packagePeers": [\
-          "@types/pg-native",\
-          "pg-native"\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["pg-cloudflare", [\
-      ["npm:1.1.1", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/pg-cloudflare-npm-1.1.1-fe242426f0-10c0.zip/node_modules/pg-cloudflare/",\
-        "packageDependencies": [\
-          ["pg-cloudflare", "npm:1.1.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["pg-connection-string", [\
-      ["npm:2.6.2", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/pg-connection-string-npm-2.6.2-43a4a40be5-10c0.zip/node_modules/pg-connection-string/",\
-        "packageDependencies": [\
-          ["pg-connection-string", "npm:2.6.2"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["pg-int8", [\
       ["npm:1.0.1", {\
         "packageLocation": "../../../../../../.yarn/berry/cache/pg-int8-npm-1.0.1-5cd67f3e22-10c0.zip/node_modules/pg-int8/",\
         "packageDependencies": [\
           ["pg-int8", "npm:1.0.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["pg-numeric", [\
-      ["npm:1.0.2", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/pg-numeric-npm-1.0.2-9026ec3427-10c0.zip/node_modules/pg-numeric/",\
-        "packageDependencies": [\
-          ["pg-numeric", "npm:1.0.2"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["pg-pool", [\
-      ["npm:3.6.1", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/pg-pool-npm-3.6.1-477c9660b9-10c0.zip/node_modules/pg-pool/",\
-        "packageDependencies": [\
-          ["pg-pool", "npm:3.6.1"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:a7eae9ea8675c5d10f6c7b435ac10ab2d74ae37633aff71493d365dc7f7315643da269ff8d72ac5a9930df6f5c0a9fec3f624b729d0d6398fc3ebd2b6336da33#npm:3.6.1", {\
-        "packageLocation": "./.yarn/__virtual__/pg-pool-virtual-2c646ab0bd/7/.yarn/berry/cache/pg-pool-npm-3.6.1-477c9660b9-10c0.zip/node_modules/pg-pool/",\
-        "packageDependencies": [\
-          ["pg-pool", "virtual:a7eae9ea8675c5d10f6c7b435ac10ab2d74ae37633aff71493d365dc7f7315643da269ff8d72ac5a9930df6f5c0a9fec3f624b729d0d6398fc3ebd2b6336da33#npm:3.6.1"],\
-          ["@types/pg", null],\
-          ["pg", "virtual:7d303c49e6538fbf8817598dabe4c5036507ebf86bdad45bee6aabc3862d00274bd6b84f237f6f2ac20e74528135e2510f755e75f12faf7026b5495d91c45565#npm:8.11.3"]\
-        ],\
-        "packagePeers": [\
-          "@types/pg",\
-          "pg"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7641,30 +7523,6 @@ const RAW_RUNTIME_STATE =
           ["postgres-bytea", "npm:1.0.0"],\
           ["postgres-date", "npm:1.0.7"],\
           ["postgres-interval", "npm:1.2.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:4.0.1", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/pg-types-npm-4.0.1-8f922557d3-10c0.zip/node_modules/pg-types/",\
-        "packageDependencies": [\
-          ["pg-types", "npm:4.0.1"],\
-          ["pg-int8", "npm:1.0.1"],\
-          ["pg-numeric", "npm:1.0.2"],\
-          ["postgres-array", "npm:3.0.2"],\
-          ["postgres-bytea", "npm:3.0.0"],\
-          ["postgres-date", "npm:2.0.1"],\
-          ["postgres-interval", "npm:3.0.0"],\
-          ["postgres-range", "npm:1.1.3"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["pgpass", [\
-      ["npm:1.0.5", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/pgpass-npm-1.0.5-653e71ddd8-10c0.zip/node_modules/pgpass/",\
-        "packageDependencies": [\
-          ["pgpass", "npm:1.0.5"],\
-          ["split2", "npm:4.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7861,13 +7719,6 @@ const RAW_RUNTIME_STATE =
           ["postgres-array", "npm:2.0.0"]\
         ],\
         "linkType": "HARD"\
-      }],\
-      ["npm:3.0.2", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/postgres-array-npm-3.0.2-da6a3f1fed-10c0.zip/node_modules/postgres-array/",\
-        "packageDependencies": [\
-          ["postgres-array", "npm:3.0.2"]\
-        ],\
-        "linkType": "HARD"\
       }]\
     ]],\
     ["postgres-bytea", [\
@@ -7875,14 +7726,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../../../.yarn/berry/cache/postgres-bytea-npm-1.0.0-8c2b81fa73-10c0.zip/node_modules/postgres-bytea/",\
         "packageDependencies": [\
           ["postgres-bytea", "npm:1.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:3.0.0", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/postgres-bytea-npm-3.0.0-5de4c664f6-10c0.zip/node_modules/postgres-bytea/",\
-        "packageDependencies": [\
-          ["postgres-bytea", "npm:3.0.0"],\
-          ["obuf", "npm:1.1.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7894,13 +7737,6 @@ const RAW_RUNTIME_STATE =
           ["postgres-date", "npm:1.0.7"]\
         ],\
         "linkType": "HARD"\
-      }],\
-      ["npm:2.0.1", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/postgres-date-npm-2.0.1-00e0e0bc9e-10c0.zip/node_modules/postgres-date/",\
-        "packageDependencies": [\
-          ["postgres-date", "npm:2.0.1"]\
-        ],\
-        "linkType": "HARD"\
       }]\
     ]],\
     ["postgres-interval", [\
@@ -7909,22 +7745,6 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["postgres-interval", "npm:1.2.0"],\
           ["xtend", "npm:4.0.2"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:3.0.0", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/postgres-interval-npm-3.0.0-936c769b98-10c0.zip/node_modules/postgres-interval/",\
-        "packageDependencies": [\
-          ["postgres-interval", "npm:3.0.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["postgres-range", [\
-      ["npm:1.1.3", {\
-        "packageLocation": "../../../../../../.yarn/berry/cache/postgres-range-npm-1.1.3-46f68e1a9e-10c0.zip/node_modules/postgres-range/",\
-        "packageDependencies": [\
-          ["postgres-range", "npm:1.1.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8877,7 +8697,6 @@ const RAW_RUNTIME_STATE =
           ["@types/eslint", "npm:8.44.7"],\
           ["@types/lint-staged", "npm:13.2.2"],\
           ["@types/node", "npm:18.18.13"],\
-          ["@types/pg", "npm:8.10.9"],\
           ["@types/react", "npm:18.2.38"],\
           ["@types/react-dom", "npm:18.2.17"],\
           ["@typescript-eslint/eslint-plugin", "virtual:7d303c49e6538fbf8817598dabe4c5036507ebf86bdad45bee6aabc3862d00274bd6b84f237f6f2ac20e74528135e2510f755e75f12faf7026b5495d91c45565#npm:6.12.0"],\
@@ -8894,7 +8713,6 @@ const RAW_RUNTIME_STATE =
           ["husky", "npm:8.0.3"],\
           ["lint-staged", "npm:15.1.0"],\
           ["next", "virtual:7d303c49e6538fbf8817598dabe4c5036507ebf86bdad45bee6aabc3862d00274bd6b84f237f6f2ac20e74528135e2510f755e75f12faf7026b5495d91c45565#npm:14.0.3"],\
-          ["pg", "virtual:7d303c49e6538fbf8817598dabe4c5036507ebf86bdad45bee6aabc3862d00274bd6b84f237f6f2ac20e74528135e2510f755e75f12faf7026b5495d91c45565#npm:8.11.3"],\
           ["postcss", "npm:8.4.31"],\
           ["postcss-load-config", "virtual:a3fffa234cfde0647eca0c809a1b814dd7d5ff3a7d6caba1cfa80dec5048f7ee0445c69f0d8857c49b1d82131b8323778d8b3b0c4758a59042516948a8168858#npm:4.0.2"],\
           ["prettier", "npm:3.1.0"],\

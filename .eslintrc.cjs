@@ -69,7 +69,7 @@ module.exports = {
           "sibling",
           "index",
         ],
-        "distinctGroup": false,
+        distinctGroup: false,
         "newlines-between": "never",
       },
     ],
@@ -124,6 +124,14 @@ module.exports = {
     {
       files: ["**/*.d.ts"],
       rules: { "import/no-default-export": "off" },
+    },
+
+    // Others
+    {
+      files: ["src/app/api/**/*.ts"],
+      rules: {
+        "no-console": "off",
+      },
     },
   ],
 };
